@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureProtect - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Painel de acessibilidade -->
+    <div class="painel-acessibilidade">
+        <button id="aumentarFonte">A+</button>
+        <button id="diminuirFonte">A-</button>
+        <button id="altoContraste">Contraste</button>
+    </div>
+
+    <header>
+
+        <h1>NatureProtect</h1>
+
+        <p>
+            Agro forte, futuro sustentável:
+            equilíbrio entre produção e meio ambiente.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#tema">Sobre o Tema</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#emergencia">Emergência</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="inicio">
+
+            <h2>Bem-vindo ao NatureProtect</h2>
+
+            <article>
+
+                <p>
+                    O NatureProtect foi criado para conscientizar estudantes
+                    sobre os perigos das queimadas e a importância da
+                    preservação ambiental.
+                </p>
+
+                <img
+                    src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200"
+                    alt="Floresta representando a importância da preservação ambiental"
+                    class="imagem-destaque"
+                >
+
+            </article>
+
+        </section>
+
+        <section id="tema">
+
+            <h2>Sobre o Tema</h2>
+
+            <article>
+
+                <p>
+                    O Concurso Agrinho 2026 propõe refletir sobre como
+                    a produção agrícola pode crescer sem prejudicar o meio ambiente.
+                </p>
+
+                <p>
+                    As queimadas afetam diretamente esse equilíbrio,
+                    prejudicando a natureza, os animais, a agricultura
+                    e a qualidade de vida da população.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section id="problema">
+
+            <h2>O Problema das Queimadas</h2>
+
+            <article>
+
+                <p>
+                    As queimadas podem destruir florestas,
+                    provocar perda da biodiversidade,
+                    poluir o ar e prejudicar a produção agrícola.
+                </p>
+
+                <p>
+                    Muitas delas acontecem por ações humanas
+                    e podem ser evitadas com conscientização.
+                </p>
+
+            </article>
+
+            <table>
+
+                <tr>
+                    <th>Impacto</th>
+                    <th>Consequência</th>
+                </tr>
+
+                <tr>
+                    <td>Animais</td>
+                    <td>Perda de habitat e morte de espécies</td>
+                </tr>
+
+                <tr>
+                    <td>Ar</td>
+                    <td>Poluição e problemas respiratórios</td>
+                </tr>
+
+                <tr>
+                    <td>Solo</td>
+                    <td>Perda de nutrientes importantes</td>
+                </tr>
+
+                <tr>
+                    <td>Agricultura</td>
+                    <td>Redução da produtividade</td>
+                </tr>
+
+                <tr>
+                    <td>Clima</td>
+                    <td>Aumento da emissão de gases poluentes</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section id="solucoes">
+
+            <h2>Soluções Sustentáveis</h2>
+
+            <article>
+
+                <ul>
+                    <li>Evitar queimadas ilegais.</li>
+                    <li>Preservar áreas verdes.</li>
+                    <li>Promover educação ambiental.</li>
+                    <li>Denunciar focos de incêndio.</li>
+                    <li>Utilizar práticas agrícolas sustentáveis.</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <section id="emergencia">
+
+            <h2>O que fazer ao identificar um foco de incêndio?</h2>
+
+            <article>
+
+                <ol>
+                    <li>Mantenha distância do fogo.</li>
+                    <li>Avise um adulto responsável.</li>
+                    <li>Ligue para o Corpo de Bombeiros (193).</li>
+                    <li>Informe corretamente o local.</li>
+                    <li>Não tente apagar incêndios grandes sozinho.</li>
+                </ol>
+
+            </article>
+
+        </section>
+
+        <section id="quiz">
+
+            <h2>Quiz Educativo</h2>
+
+            <article>
+
+                <div class="pergunta">
+
+                    <p>
+                        1. Qual é uma consequência das queimadas?
+                    </p>
+
+                    <button onclick="verificarResposta(this, true)">
+                        Perda da biodiversidade
+                    </button>
+
+                    <button onclick="verificarResposta(this, false)">
+                        Crescimento das florestas
+                    </button>
+
+                </div>
+
+                <div class="pergunta">
+
+                    <p>
+                        2. O que fazer ao identificar um foco de incêndio?
+                    </p>
+
+                    <button onclick="verificarResposta(this, true)">
+                        Avisar as autoridades
+                    </button>
+
+                    <button onclick="verificarResposta(this, false)">
+                        Ignorar o problema
+                    </button>
+
+                </div>
+
+                <div class="pergunta">
+
+                    <p>
+                        3. As queimadas afetam os animais?
+                    </p>
+
+                    <button onclick="verificarResposta(this, true)">
+                        Sim
+                    </button>
+
+                    <button onclick="verificarResposta(this, false)">
+                        Não
+                    </button>
+
+                </div>
+
+                <div class="pergunta">
+
+                    <p>
+                        4. Qual atitude ajuda a prevenir queimadas?
+                    </p>
+
+                    <button onclick="verificarResposta(this, true)">
+                        Não jogar materiais inflamáveis
+                    </button>
+
+                    <button onclick="verificarResposta(this, false)">
+                        Queimar lixo
+                    </button>
+
+                </div>
+
+                <div class="pergunta">
+
+                    <p>
+                        5. As queimadas prejudicam a agricultura?
+                    </p>
+
+                    <button onclick="verificarResposta(this, true)">
+                        Sim
+                    </button>
+
+                    <button onclick="verificarResposta(this, false)">
+                        Não
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="conclusao">
+
+            <h2>Conclusão</h2>
+
+            <article>
+
+                <p>
+                    Preservar a natureza é responsabilidade de todos.
+                    Combater as queimadas ajuda a proteger os recursos naturais,
+                    os animais, a agricultura e o futuro das próximas gerações.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            NatureProtect | Concurso Agrinho 2026
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
