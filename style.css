@@ -1,0 +1,150 @@
+:root{
+    --verde:#2e7d32;
+    --laranja:#ef6c00;
+    --vermelho:#c62828;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(
+        90deg,
+        var(--verde),
+        var(--laranja)
+    );
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav ul{
+    list-style:none;
+    padding:0;
+}
+
+nav li{
+    display:inline-block;
+    margin:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+h2{
+    color:var(--verde);
+}
+
+.imagem-destaque{
+    width:100%;
+    max-width:800px;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table,
+th,
+td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:var(--laranja);
+    color:white;
+}
+
+th,
+td{
+    padding:10px;
+    text-align:center;
+}
+
+.pergunta{
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:10px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background:var(--verde);
+    color:white;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.painel-acessibilidade{
+    position:fixed;
+    top:120px;
+    right:10px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    z-index:1000;
+}
+
+.alto-contraste{
+    background:black;
+    color:yellow;
+}
+
+.alto-contraste section{
+    background:#111;
+    color:yellow;
+}
+
+.alto-contraste h2{
+    color:#00ff00;
+}
+
+@media(max-width:768px){
+
+    nav li{
+        display:block;
+    }
+
+    section{
+        margin:10px;
+    }
+
+    .painel-acessibilidade{
+        bottom:20px;
+        top:auto;
+    }
+}
